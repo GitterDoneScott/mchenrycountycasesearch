@@ -1,0 +1,7 @@
+[Discord]
+url=https://discordapp.com/api/webhooks/.....
+[Search]
+terms=<name>
+searchtype=PartyNameSearch
+searchexcludelist=<casenumber>,<term>
+
