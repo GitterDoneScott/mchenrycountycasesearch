@@ -1,7 +1,5 @@
-sys
-time
 configparser
 requests
-requests_html import HTMLSession
+requests_html
 zc.lockfile
 schedule
