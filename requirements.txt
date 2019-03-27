@@ -3,3 +3,5 @@ requests
 requests_html
 zc.lockfile
 schedule
+retrying
+

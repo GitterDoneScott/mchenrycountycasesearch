@@ -21,6 +21,7 @@ import requests
 from requests_html import HTMLSession
 import zc.lockfile
 import schedule
+from retrying import retry
 
 discord_url = None
 discord_message = None
@@ -112,6 +113,7 @@ def notify(message):
 
 
 
+@retry(wait_random_min=2000, wait_random_max=5000, stop_max_attempt_number=10)
 def search():
     s = HTMLSession()
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"}
